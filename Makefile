@@ -6,10 +6,10 @@ LANGSCI_FILES =  myMacros.tex \
 	latexmkrc \
 	$(wildcard packages/*.sty) 
 
-release_jlm:
+release_langscibook:
 	rm -fr temp
 	mkdir temp
 	cp -r --parents $(LANGSCI_FILES) temp
 	cp -r langscibook/langsci temp/
-	cd temp; zip -r langsci-template.zip *; mv langsci-template.zip ..
+	cd temp; zip -r langscibook-template.zip *; mv langscibook-template.zip ..
 	rm -fr temp
