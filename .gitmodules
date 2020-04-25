@@ -1,0 +1,3 @@
+[submodule "langscibook"]
+	path = langscibook
+	url = https://github.com/langsci/langscibook.git
