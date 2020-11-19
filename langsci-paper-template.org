@@ -18,7 +18,7 @@
 #+LATEX_HEADER: \usepackage{booktabs}
 #+LATEX_HEADER: \usepackage{packages/tikz-settings} % tikz, forest, etc.
 #+LATEX_HEADER: %\input{myMacros}
-#+LATEX_HEADER: \bibliography{references}
+#+LATEX_HEADER: \addbibresource[datatype=bibtex]{references.bib}  % BibLaTeX
 :end: 
 # Eventually appears after \begin{document}.
 #+BEGIN_EXPORT latex
