@@ -64,7 +64,7 @@ Remember to first add the class [[https://github.com/langsci/latex][langscibook]
 #+BEGIN_SRC emacs-lisp :exports none
 (add-to-list 'org-latex-classes
 						 '("langscibook" 
-							 "\\documentclass{langsci/langscibook}
+							 "\\documentclass{langscibook}
 				    		[NO-DEFAULT-PACKAGES]" 
 							 ("\\part{%s}" . "\\part*{%s}") 
 							 ("\\chapter{%s}" . "\\chapter*{%s}") 
@@ -76,7 +76,7 @@ Remember to first add the class [[https://github.com/langsci/latex][langscibook]
 
 (add-to-list 'org-latex-classes
 						 '("langscibook-paper" 
-							 "\\documentclass[output=paper]{langsci/langscibook}
+							 "\\documentclass[output=paper]{langscibook}
 				    		[NO-DEFAULT-PACKAGES]" 
 							 ("\\section{%s}" . "\\section*{%s}") 
 							 ("\\subsection{%s}" . "\\subsection*{%s}") 

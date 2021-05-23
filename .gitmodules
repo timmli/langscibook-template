@@ -1,3 +1,6 @@
 [submodule "langscibook"]
 	path = langscibook
 	url = https://github.com/langsci/langscibook.git
+[submodule "langsci-fonts"]
+	path = langsci-fonts
+	url = https://github.com/langsci/langsci-fonts.git

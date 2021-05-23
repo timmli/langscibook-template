@@ -1,0 +1,56 @@
+% Taken from langsci-fonts/fontspec.cfg and modified 
+
+%%% FONTSPEC.CFG %%%
+%
+% This configuration file sets up TeX Ligatures by default for all fonts loaded
+% with `\setmainfont` and `\setsansfont`.
+%
+% In addition, `\setmonofont` has default features to enforce "monospace"
+% settings with regard to space stretchability and shrinkability.
+%
+% Make a copy of this file in your own home TEXMF directory to set up your own
+% defaults.
+
+\defaultfontfeatures
+ [\rmfamily,\sffamily]
+ {Ligatures=TeX}
+
+\defaultfontfeatures
+ [\ttfamily]
+ {WordSpace={1,0,0},
+  HyphenChar=None,
+  PunctuationSpace=WordSpace}
+
+\setmonofont[
+  Scale=MatchLowercase,
+  BoldFont = DejaVuSansMono-Bold.ttf ,
+  SlantedFont = DejaVuSansMono-Oblique.ttf ,
+  BoldSlantedFont = DejaVuSansMono-BoldOblique.ttf
+]{DejaVuSansMono.ttf}
+
+\setsansfont[
+  Scale=MatchLowercase,
+  Path=fonts/,
+  BoldFont = Arimo-Bold.ttf,
+  ItalicFont = Arimo-Italic.ttf,
+  BoldItalicFont = Arimo-BoldItalic.ttf
+]{Arimo-Regular.ttf}
+
+\setmathfont[AutoFakeBold,Path=fonts/]{LibertinusMath-Regular.otf}
+\setmathfont[range={cal},StylisticSet=1,Path=fonts/]{XITSMath-Regular.otf}
+\setmathfont[range={bfcal},StylisticSet=1,Path=fonts/]{XITSMath-Bold.otf}
+
+\setmainfont[
+  Ligatures={TeX,Common},
+  Path=fonts/,
+  PunctuationSpace=0,
+  Numbers={Proportional},
+  BoldFont = LibertinusSerif-Semibold.otf,
+  ItalicFont = LibertinusSerif-Italic.otf,
+  BoldItalicFont = LibertinusSerif-SemiboldItalic.otf,
+  BoldSlantedFont = LibertinusSerif-Semibold.otf,
+  SlantedFont    = LibertinusSerif-Regular.otf,
+  SlantedFeatures = {FakeSlant=0.25},
+  BoldSlantedFeatures = {FakeSlant=0.25},
+  SmallCapsFeatures = {FakeSlant=0},
+]{LibertinusSerif-Regular.otf}
