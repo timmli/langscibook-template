@@ -30,7 +30,7 @@ release_langscibook:
 	cp -r --parents $(LANGSCI_FILES) temp
 	mv temp/langscibook/* temp
 	rm -fr temp/langscibook
-	mv temp/langsi-fonts/* test
+	mv temp/langsci-fonts/* temp
 	rm -fr temp/langsci-fonts
 	cd temp; zip -r langscibook-template.zip *; mv langscibook-template.zip ..
 	rm -fr temp
